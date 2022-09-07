@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Mentalista</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="entradaDoUsuario">
+        <h1 class="titulo-principal">Adivinhe o número que estou pensando</h1>
+        <input id="valor" placeholder="Insira o número aqui" type="number" />
+        <button onclick="adivinhar()">Escolher</button>
+        <div class="tentativas">Tentativas ( <span class="cont">3</span> )</div>
+      </div>
+      <div class="saida">
+        <img
+          class="imagemAcertou over"
+          src="https://imageproxy.ifunny.co/crop:x-20,resize:640x,quality:90x75/images/62a20d2aad7ff11020648cf79a305c6075c7150060421ae1b0d212c6889a9c3e_1.jpg"
+          alt=""
+        />
+        <img
+          class="imagemErrou over"
+          src="https://pbs.twimg.com/media/C4ULriyWcAAkOXk.jpg"
+          alt=""
+        />
+        <img
+          class="imagemInicio"
+          src="https://thumbs.dreamstime.com/b/homem-ir%C3%B4nico-personagem-de-banda-desenhada-oeste-selvagem-fundo-intervalo-m%C3%ADnimo-107879734.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div class="caixa-over over">
+      <div>
+        <div class="gameOver">
+          <h2>Game over</h2>
+          <br>
+          <br>
+          <p class="resposta"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./css/js/scripts.js"></script>
+</html>
